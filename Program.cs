@@ -18,8 +18,8 @@ using Azure.Security.KeyVault.Secrets;
 
 var builder = WebApplication.CreateBuilder(args);
 // Key Vault URL
-var keyVaultUrl = new Uri("https://WebProject1Vault.vault.azure.net/");
-// Authenticate using Managed Identity in Azure
+var keyVaultUrl = new Uri("https://webproject1vault.vault.azure.net/");
+// Authenticate using Managed Identity in Azu
 var secretClient = new SecretClient(
     keyVaultUrl,
     new DefaultAzureCredential());
