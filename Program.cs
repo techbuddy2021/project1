@@ -26,7 +26,7 @@ var secretClient = new SecretClient(
 // Get secret
 KeyVaultSecret secret = secretClient.GetSecret("my-first-azure-sql-server");
 string connectionString = secret.Value;
-// Use connection string
+// Use connection strings
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 var app = builder.Build();
